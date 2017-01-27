@@ -1,0 +1,21 @@
+<article class="people">	
+	<div class="people">
+	<h2>Name: {{person.name}}</h2>
+	<h2>ID: {{person.id}}</h2>
+	</div>
+   
+    <div class="p">
+	<ul>
+	{{#each eventList}}
+		<li><strong>Event Title: </strong><a href="../events/{{id}}">{{title}}</a></li>
+		<li><strong>Event ID: </strong>{{id}}</li>
+		<li><strong>Attendees  ID: </strong>{{attendees}}</li>
+		<li><strong>Start Time: </strong>{{startTime}}</li>
+		<li><strong>Description: </strong>{{description}}</li>
+		<li><strong>Location: </strong>{{location}}</li>
+		</br>
+	{{/each}}
+	</ul>
+	</div>
+</article>
+

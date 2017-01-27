@@ -1,0 +1,11 @@
+<section>
+    <h1>PEOPLE</h1>
+    {{#each people}}
+    <article class="people">
+        <ul>
+
+        <li><h4><a href="/people/{{this.id}}">{{this.name}}</a></h4></li>
+        </ul>
+    </article>
+    {{/each}}
+</section>
