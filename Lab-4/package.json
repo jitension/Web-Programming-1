@@ -1,0 +1,19 @@
+{
+  "name": "assignemt4",
+  "version": "0.0.1",
+  "description": "this package is about creating and using aserver",
+  "main": "app.js",
+  "scripts": {
+    "seed": "node ./tasks/seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Jitendra Purohit",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongodb": "^2.1.18",
+    "node-uuid": "^1.4.7",
+    "seed": "^0.4.4"
+  }
+}
