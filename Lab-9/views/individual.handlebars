@@ -1,0 +1,50 @@
+<div class="col-sm-12 col-md-6">
+    {{#each data}}
+    <h3 id="noteTitle">  <b>Title:{{{ noteTitle }}}</b> </h3>
+    <h4 id="noteSummary"> Summary: {{{ summary }}}</h4>
+     <h3 id="dueDate" value={{{dueDate}}}> Due Date: {{{ dueDate }}}</h3> 
+    <h4 id="noteBody">Body: {{{ noteBody }}}</h4> {{/each}}
+</div>
+
+<div>
+     <h5><a href="/"> Go Back to List </a> </h5>
+</div>
+<form id="nextform">
+    <div>
+        <input type="submit" id="next-node" value="Next Node" />
+    </div>
+</form>
+
+<style>
+    input[type=text],
+    select {
+        width: 100%;
+        padding: 5px 5px;
+        margin: 2px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 5px 5px;
+        margin: 2px 0;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+    
+    div {
+        border-radius: 2px;
+        background-color: #f2f2f2;
+        padding: 10px;
+    }
+</style>

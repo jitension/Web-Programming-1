@@ -1,0 +1,41 @@
+<div class="col-sm-12 col-md-6">
+        <h2><u> List of Notes and their Sumary:</u> </h2>
+    {{#each data}}
+    <h3> Title: <a href="/{{{noteTitle}}}"> {{{ noteTitle }}} </a></h3>
+    <h4> {{{ summary }}}</h4> <br> {{/each}}
+</div>
+
+
+<style>
+    input[type=text],
+    select {
+        width: 100%;
+        padding: 5px 5px;
+        margin: 2px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 5px 5px;
+        margin: 2px 0;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+    
+    div {
+        border-radius: 2px;
+        background-color: #f2f2f2;
+        padding: 5px;
+    }
+</style>
